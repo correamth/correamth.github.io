@@ -1,0 +1,24 @@
+			body {
+			  -webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+					user-select: none;
+			}
+			@font-face {
+			  font-family: Lazer84;
+			  src: url(Lazer84.ttf);
+			}
+			div h1{
+			    font-weight: 100;
+			    font-family: Lazer84;
+			    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+			}
+			.spans{
+			font-size: 80px!important;
+			}
+			@media screen and (max-width: 600px) {
+			  .spans{
+			font-size: 40px!important;
+			}
+			}
+			
