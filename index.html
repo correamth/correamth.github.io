@@ -12,19 +12,46 @@
 </head>
 <body>
 <div id="particles-js" style="background:black;">
-  <div class="header">
+
+  
+    <div id="main" class="header" >
       <h1>
         <span class="spans" style=" letter-spacing: 10px;">Correamth</span></br>
         <span class="spans2" style=" letter-spacing: 5px; text-shadow: none!important;">Thauã Correa Martins</span>
       </h1>
       <div class="header-icons">
         <a aria-label="My Github" target="_blank" href="https://github.com/correamth" rel="noopener"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        <a rel="noopener" style="cursor: pointer;" onclick="danone()"><i class="icon fa fa-book" aria-hidden="true"></i></a>
         <a aria-label="My Linkedin" target="_blank" href="https://www.linkedin.com/in/thau%C3%A3-corr%C3%AAa-martins-41546b149/" rel="noopener"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
       </div>
   </div>
+
+
+	<div id="projetos" class="header" style="display:none;">
+	   <div id="projetos" class="bordinha" style="display: flex; background-color: rgba(0, 0, 0, 0.4); border-color: rgba(255, 255, 255, 0.9); color: rgb(255, 255, 255); height:400px; width:800px;">
+		  <div class="col-md-8" style="margin: auto; margin-bottom:2.25rem; margin-top:-1.25rem;">
+			 <h1 class="spans3" style=" letter-spacing: 10px;">Projetos</h1>
+			 <br> <img src="https://www.w3schools.com/bootstrap4/sanfran.jpg" style="width: 100px; height: 100px; margin-top: .5rem; margin:20px"> <img src="https://www.w3schools.com/bootstrap4/sanfran.jpg"  style="width: 100px; height: 100px; margin-top: .5rem; margin:20px" onclick="volta()"> <img src="https://www.w3schools.com/bootstrap4/sanfran.jpg"  style="width: 100px; height: 100px; margin-top: .5rem; margin:20px"> <br> <br> 
+		  </div>
+	   </div>
+	</div>
+
 </div>
+<script>
+
+function danone(){
+document.getElementById('main').style.display = 'none';//retira o elemento principal
+document.getElementById('projetos').style.display = 'flex';//adiciona a div que está none
+}
+function volta(){
+document.getElementById('projetos').style.display = 'none';//retira o elemento principal
+document.getElementById('main').style.display = 'initial';//adiciona a div que está none
+}
+
+</script>
 <script src="assets/main.js"></script>
 <script src="assets/sweet-scroll.min.js"></script>
 <script src="assets/particles.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 <html>
